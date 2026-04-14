@@ -52,7 +52,7 @@ export default function Diferenciales() {
           <span className="text-[#4CAF50] text-sm font-bold tracking-widest uppercase">Por qué nosotros</span>
           <h2 className="text-4xl md:text-5xl font-black text-[#1B5E20] mt-3 leading-tight">
             Especialización exclusiva.<br />
-            <span className="text-[#1A1A1A]">Sin contaminación cruzada. Sin vueltas.</span>
+            <span className="text-[#1A1A1A]">Sin vueltas.</span>
           </h2>
         </motion.div>
 
