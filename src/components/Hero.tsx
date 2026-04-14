@@ -12,8 +12,6 @@ export default function Hero() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
 
   return (
     <section ref={ref} className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#1B5E20]">
@@ -48,10 +46,7 @@ export default function Hero() {
         transition={{ duration: 1.4, ease: 'easeOut' }}
       />
 
-      <motion.div
-        style={{ y: textY, opacity }}
-        className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-24"
-      >
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-24">
         {/* Logo — grande */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -156,7 +151,7 @@ export default function Hero() {
             Ver servicios
           </motion.a>
         </motion.div>
-      </motion.div>
+      </div>
 
       {/* Scroll indicator */}
       <motion.div
