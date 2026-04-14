@@ -60,7 +60,7 @@ export default function Hero() {
           className="mb-14"
         >
           <img
-            src="/logo-pbf.png"
+            src={`${import.meta.env.BASE_URL}logo-pbf.png`}
             alt="Plant Based Foods S.A."
             className="h-32 md:h-40 brightness-0 invert"
           />

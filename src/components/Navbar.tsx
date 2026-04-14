@@ -17,7 +17,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/logo-pbf.png" alt="Plant Based Foods S.A." className="h-14 brightness-0 invert" />
+          <img src={`${import.meta.env.BASE_URL}logo-pbf.png`} alt="Plant Based Foods S.A." className="h-14 brightness-0 invert" />
         </motion.a>
 
         <motion.a
